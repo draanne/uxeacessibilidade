@@ -1,0 +1,210 @@
+/* Variáveis de cores de alto contraste e acessibilidade */
+:root {
+  --cor-primaria: #0b4f8a;
+  --cor-primaria-escura: #07355e;
+  --cor-destaque: #d9534f;
+  --cor-destaque-hover: #b53d39;
+  --cor-fundo: #ffffff;
+  --cor-fundo-suave: #f0f4f8;
+  --cor-texto: #1a1a1a;
+  --cor-borda: #cbd5e1;
+}
+
+/* Configurações gerais */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 20px; /* Base maior para leitura confortável */
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Cabeçalho */
+.cabecalho {
+  background-color: var(--cor-primaria);
+  color: #ffffff;
+  padding: 20px 0;
+}
+
+.cabecalho-conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.logo {
+  font-size: 1.4rem;
+}
+
+.botao-ajuda-topo {
+  background-color: #ffffff;
+  color: var(--cor-primaria);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: 2px solid #ffffff;
+}
+
+.botao-ajuda-topo:hover,
+.botao-ajuda-topo:focus {
+  background-color: var(--cor-fundo-suave);
+  outline: 3px solid #ffd700;
+}
+
+/* Banner Inicial */
+.banner {
+  background-color: var(--cor-fundo-suave);
+  padding: 60px 0;
+  text-align: center;
+  border-bottom: 2px solid var(--cor-borda);
+}
+
+.banner h2 {
+  font-size: 2rem;
+  color: var(--cor-primaria-escura);
+  margin-bottom: 16px;
+}
+
+.banner p {
+  font-size: 1.15rem;
+  max-width: 750px;
+  margin: 0 auto 32px auto;
+}
+
+.botao-ajuda-destaque {
+  display: inline-block;
+  background-color: var(--cor-destaque);
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 18px 36px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.botao-ajuda-destaque:hover,
+.botao-ajuda-destaque:focus {
+  background-color: var(--cor-destaque-hover);
+  outline: 4px solid #1a1a1a;
+}
+
+/* Seções e Cartões */
+.secao {
+  padding: 56px 0;
+}
+
+.secao-alternativa {
+  background-color: var(--cor-fundo-suave);
+}
+
+.titulo-secao {
+  font-size: 1.7rem;
+  color: var(--cor-primaria-escura);
+  margin-bottom: 32px;
+  border-left: 8px solid var(--cor-primaria);
+  padding-left: 16px;
+}
+
+.grade-cartoes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.cartao {
+  background-color: #ffffff;
+  border: 2px solid var(--cor-borda);
+  border-radius: 12px;
+  padding: 28px; /* Espaçamento interno confortável */
+}
+
+.numero-cartao {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--cor-primaria);
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 50%;
+  margin-bottom: 16px; /* Afasta o número da borda e do título */
+}
+
+.cartao h3 {
+  font-size: 1.25rem;
+  color: var(--cor-primaria-escura);
+  margin-bottom: 12px;
+}
+
+/* Lista de Alertas de Fraude */
+.lista-alertas {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.item-alerta {
+  background-color: #ffffff;
+  border-left: 8px solid var(--cor-destaque);
+  border-top: 1px solid var(--cor-borda);
+  border-right: 1px solid var(--cor-borda);
+  border-bottom: 1px solid var(--cor-borda);
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.item-alerta h3 {
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+  color: #9e2a27;
+}
+
+/* Seção de Ajuda */
+.secao-ajuda {
+  background-color: var(--cor-primaria-escura);
+  color: #ffffff;
+}
+
+.secao-ajuda .titulo-secao {
+  color: #ffffff;
+  border-left-color: #ffd700;
+}
+
+.texto-ajuda {
+  margin-bottom: 28px;
+  font-size: 1.15rem;
+}
+
+.cartao-contato {
+  color: var(--cor-texto);
+}
+
+/* Rodapé */
+.rodape {
+  background-color: #111827;
+  color: #ffffff;
+  text-align: center;
+  padding: 28px 0;
+  font-size: 0.95rem;
+}
